@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Guncel Doviz</string>
+
+    <!-- Resources for RegisterScreenActivity -->
+    <string name="register_screen_activity_username_edit_text_hint">Enter your username</string>
+    <string name="register_screen_activity_password_edit_text_hint">Enter your password</string>
+    <string name="register_screen_activity_confirm_password_edit_text_hint">Confirm your password</string>
+    <string name="register_screen_activity_birthday_edit_text_hint">Birthday</string>
+    <string name="register_screen_activity_guncel_doviz_text_view_hint">Güncel Döviz</string>
+    <string name="register_screen_activity_guncel_doviz_text_view_text">Güncel Döviz</string>
+    <string name="register_screen_activity_register_button_hint">REGISTER</string>
+    <string name="register_screen_activity_register_button_text">REGISTER</string>
+
+    <!-- Resources for LoginScreenActivity -->
+    <string name="login_screen_activity_password_edit_text_hint">Enter your password</string>
+    <string name="login_screen_activity_register_button_text">REGISTER</string>
+    <string name="login_screen_activity_login_button_hint">LOGIN</string>
+    <string name="login_screen_activity_guncel_doviz_text_view_hint">Güncel Döviz</string>
+    <string name="login_screen_activity_register_button_hint">REGISTER</string>
+    <string name="login_screen_activity_login_button_text">LOGIN</string>
+    <string name="login_screen_activity_guncel_doviz_text_view_text">Güncel Döviz</string>
+    <string name="login_screen_activity_user_name_edit_text_hint">Enter your username</string>
+</resources>

@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraint_layout_constraint_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.RegisterScreenActivity"
+    android:background="@color/register_screen_activity_constraint_layout_constraint_layout_background_color">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/content_constraint_layout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/register_screen_activity_content_constraint_layout_margin_top"
+        android:layout_marginBottom="@dimen/register_screen_activity_content_constraint_layout_margin_bottom"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_weight="1.25"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/back_arrow_button"
+        app:layout_constraintVertical_weight="0.74">
+
+        <ImageView
+            android:id="@+id/shape_image_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:alpha="0.07"
+            android:scaleType="centerCrop"
+            android:src="@drawable/shape"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/guncel_doviz_text_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="36dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="36dp"
+            android:gravity="center"
+            android:letterSpacing="0.29"
+            android:text="@string/register_screen_activity_guncel_doviz_text_view_text"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/register_screen_activity_guncel_doviz_text_view_text_size"
+            app:layout_constraintHorizontal_weight="0.21"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ic_launcher_image_view" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/button_constraint_layout"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/register_screen_activity_button_constraint_layout_height"
+            android:layout_marginLeft="36dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="36dp"
+            android:background="#12FFFFFF"
+            app:layout_constraintHorizontal_weight="0.37"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/guncel_doviz_text_view">
+
+            <ImageView
+                android:id="@+id/icon_image_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/register_screen_activity_icon_image_view_margin_start"
+                android:layout_marginTop="@dimen/register_screen_activity_icon_image_view_margin_top"
+                android:scaleType="center"
+                android:src="@drawable/icon_6"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="27dp"
+                tools:layout_editor_absoluteY="21dp" />
+
+            <EditText
+                android:id="@+id/username_edit_text"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/register_screen_activity_username_edit_text_height"
+                android:layout_marginStart="@dimen/register_screen_activity_username_edit_text_margin_start"
+                android:layout_marginTop="@dimen/register_screen_activity_username_edit_text_margin_top"
+                android:alpha="0.38"
+                android:background="@color/register_screen_activity_username_edit_text_background_color"
+                android:gravity="start|center_vertical"
+                android:hint="@string/register_screen_activity_username_edit_text_hint"
+                android:inputType="text"
+                android:maxLines="1"
+                android:textColor="@color/register_screen_activity_username_edit_text_text_color"
+                android:textColorHint="@color/color_hint_text"
+                android:textSize="@dimen/register_screen_activity_username_edit_text_text_size"
+                app:layout_constraintHorizontal_weight="0.75"
+                app:layout_constraintLeft_toRightOf="@+id/icon_image_view"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="79dp"
+                tools:layout_editor_absoluteY="21dp" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <Button
+            android:id="@+id/register_button"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/register_screen_activity_register_button_height"
+            android:layout_marginLeft="36dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="36dp"
+            android:background="@drawable/register_screen_activity_register_button_ripple"
+            android:gravity="center"
+            android:text="@string/register_screen_activity_register_button_text"
+            android:textColor="@color/register_screen_activity_register_button_text_color"
+            android:textSize="@dimen/register_screen_activity_register_button_text_size"
+            app:layout_constraintHorizontal_weight="0.37"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button_four_constraint_layout" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/button_two_constraint_layout"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/register_screen_activity_button_two_constraint_layout_height"
+            android:layout_marginLeft="36dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="36dp"
+            android:background="#12FFFFFF"
+            app:layout_constraintHorizontal_weight="0.37"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button_constraint_layout">
+
+            <EditText
+                android:id="@+id/password_edit_text"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/register_screen_activity_password_edit_text_height"
+                android:layout_marginStart="@dimen/register_screen_activity_password_edit_text_margin_start"
+                android:alpha="0.38"
+                android:background="@color/register_screen_activity_password_edit_text_background_color"
+                android:gravity="start|center_vertical"
+                android:hint="@string/register_screen_activity_password_edit_text_hint"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:textColor="@color/register_screen_activity_password_edit_text_text_color"
+                android:textColorHint="@color/color_hint_text"
+                android:textSize="@dimen/register_screen_activity_password_edit_text_text_size"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_weight="0.74"
+                app:layout_constraintLeft_toRightOf="@+id/icon_two_image_view"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="82dp"
+                tools:layout_editor_absoluteY="20dp" />
+
+            <ImageView
+                android:id="@+id/icon_two_image_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/register_screen_activity_icon_two_image_view_margin_start"
+                android:scaleType="center"
+                android:src="@drawable/icon_5"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="34dp"
+                tools:layout_editor_absoluteY="20dp" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/button_three_constraint_layout"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/register_screen_activity_button_three_constraint_layout_height"
+            android:layout_marginLeft="36dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="36dp"
+            android:background="#12FFFFFF"
+            app:layout_constraintHorizontal_weight="0.37"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button_two_constraint_layout">
+
+            <EditText
+                android:id="@+id/confirm_password_edit_text"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/register_screen_activity_confirm_password_edit_text_height"
+                android:layout_marginStart="@dimen/register_screen_activity_confirm_password_edit_text_margin_start"
+                android:layout_marginTop="@dimen/register_screen_activity_confirm_password_edit_text_margin_top"
+                android:alpha="0.38"
+                android:background="@color/register_screen_activity_confirm_password_edit_text_background_color"
+                android:gravity="start|center_vertical"
+                android:hint="@string/register_screen_activity_confirm_password_edit_text_hint"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:textColor="@color/register_screen_activity_confirm_password_edit_text_text_color"
+                android:textColorHint="@color/color_hint_text"
+                android:textSize="@dimen/register_screen_activity_confirm_password_edit_text_text_size"
+                app:layout_constraintHorizontal_weight="0.74"
+                app:layout_constraintLeft_toRightOf="@+id/icon_three_image_view"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="82dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <ImageView
+                android:id="@+id/icon_three_image_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/register_screen_activity_icon_three_image_view_margin_start"
+                android:layout_marginTop="@dimen/register_screen_activity_icon_three_image_view_margin_top"
+                android:scaleType="center"
+                android:src="@drawable/icon_2"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="27dp"
+                tools:layout_editor_absoluteY="16dp" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/button_four_constraint_layout"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/register_screen_activity_button_four_constraint_layout_height"
+            android:layout_marginLeft="36dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="36dp"
+            android:background="#12FFFFFF"
+            app:layout_constraintHorizontal_weight="0.37"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button_three_constraint_layout">
+
+            <EditText
+                android:id="@+id/birthday_edit_text"
+                android:layout_width="@dimen/register_screen_activity_birthday_edit_text_width"
+                android:layout_height="@dimen/register_screen_activity_birthday_edit_text_height"
+                android:alpha="0.38"
+                android:background="@color/register_screen_activity_birthday_edit_text_background_color"
+                android:gravity="start|center_vertical"
+                android:hint="@string/register_screen_activity_birthday_edit_text_hint"
+                android:inputType="date"
+                android:maxLines="1"
+                android:textColor="@color/register_screen_activity_birthday_edit_text_text_color"
+                android:textColorHint="@color/color_hint_text"
+                android:textSize="@dimen/register_screen_activity_birthday_edit_text_text_size"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/icon_four_image_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/register_screen_activity_icon_four_image_view_margin_start"
+                android:scaleType="center"
+                android:src="@drawable/icon_3"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="26dp"
+                tools:layout_editor_absoluteY="15dp" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ImageView
+            android:id="@+id/ic_launcher_image_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="126dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginRight="126dp"
+            android:scaleType="center"
+            android:src="@drawable/ic_launcher"
+            app:layout_constraintHorizontal_weight="0.15"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageButton
+        android:id="@+id/back_arrow_button"
+        android:layout_width="@dimen/register_screen_activity_back_arrow_button_width"
+        android:layout_height="@dimen/register_screen_activity_back_arrow_button_height"
+        android:layout_marginStart="@dimen/register_screen_activity_back_arrow_button_margin_start"
+        android:layout_marginTop="@dimen/register_screen_activity_back_arrow_button_margin_top"
+        android:background="?attr/selectableItemBackground"
+        android:src="@drawable/back_arrow"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="10dp"
+        tools:layout_editor_absoluteY="31dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

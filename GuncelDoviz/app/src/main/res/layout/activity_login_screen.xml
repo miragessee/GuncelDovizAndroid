@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraint_layout_constraint_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.LoginScreenActivity"
+    android:background="@color/login_screen_activity_constraint_layout_constraint_layout_background_color">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/content_constraint_layout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/login_screen_activity_content_constraint_layout_margin_top"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_weight="1.25"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_weight="0.74">
+
+        <Button
+            android:id="@+id/register_button"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/login_screen_activity_register_button_height"
+            android:layout_marginLeft="36dp"
+            android:layout_marginTop="@dimen/login_screen_activity_register_button_margin_top"
+            android:layout_marginRight="36dp"
+            android:background="@drawable/login_screen_activity_register_button_ripple"
+            android:gravity="center"
+            android:text="@string/login_screen_activity_register_button_text"
+            android:textColor="@color/login_screen_activity_register_button_text_color"
+            android:textSize="@dimen/login_screen_activity_register_button_text_size"
+            app:layout_constraintHorizontal_weight="0.66"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/login_button" />
+
+        <ImageView
+            android:id="@+id/shape_image_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:alpha="0.07"
+            android:scaleType="centerCrop"
+            android:src="@drawable/shape_2"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <TextView
+            android:id="@+id/guncel_doviz_text_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="102dp"
+            android:layout_marginTop="@dimen/login_screen_activity_guncel_doviz_text_view_margin_top"
+            android:layout_marginRight="102dp"
+            android:gravity="center"
+            android:letterSpacing="0.29"
+            android:text="@string/login_screen_activity_guncel_doviz_text_view_text"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/login_screen_activity_guncel_doviz_text_view_text_size"
+            app:layout_constraintHorizontal_weight="0.38"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/button_constraint_layout"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/login_screen_activity_button_constraint_layout_height"
+            android:layout_marginLeft="36dp"
+            android:layout_marginTop="@dimen/login_screen_activity_button_constraint_layout_margin_top"
+            android:layout_marginRight="36dp"
+            android:background="#12FFFFFF"
+            app:layout_constraintHorizontal_weight="0.66"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/guncel_doviz_text_view">
+
+            <ImageView
+                android:id="@+id/icon_image_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/login_screen_activity_icon_image_view_margin_start"
+                android:layout_marginTop="@dimen/login_screen_activity_icon_image_view_margin_top"
+                android:scaleType="center"
+                android:src="@drawable/icon"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="27dp"
+                tools:layout_editor_absoluteY="21dp" />
+
+            <EditText
+                android:id="@+id/user_name_edit_text"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/login_screen_activity_user_name_edit_text_height"
+                android:layout_marginStart="@dimen/login_screen_activity_user_name_edit_text_margin_start"
+                android:layout_marginTop="@dimen/login_screen_activity_user_name_edit_text_margin_top"
+                android:alpha="0.38"
+                android:background="@color/login_screen_activity_user_name_edit_text_background_color"
+                android:gravity="start|center_vertical"
+                android:hint="@string/login_screen_activity_user_name_edit_text_hint"
+                android:inputType="text"
+                android:maxLines="1"
+                android:textColor="@color/login_screen_activity_user_name_edit_text_text_color"
+                android:textColorHint="@color/color_hint_text"
+                android:textSize="@dimen/login_screen_activity_user_name_edit_text_text_size"
+                app:layout_constraintHorizontal_weight="0.74"
+                app:layout_constraintLeft_toRightOf="@+id/icon_image_view"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="80dp"
+                tools:layout_editor_absoluteY="21dp" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <Button
+            android:id="@+id/login_button"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/login_screen_activity_login_button_height"
+            android:layout_marginLeft="36dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="36dp"
+            android:background="@drawable/login_screen_activity_login_button_ripple"
+            android:gravity="center"
+            android:text="@string/login_screen_activity_login_button_text"
+            android:textColor="@color/login_screen_activity_login_button_text_color"
+            android:textSize="@dimen/login_screen_activity_login_button_text_size"
+            app:layout_constraintHorizontal_weight="0.66"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button_two_constraint_layout" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/button_two_constraint_layout"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/login_screen_activity_button_two_constraint_layout_height"
+            android:layout_marginLeft="36dp"
+            android:layout_marginTop="@dimen/login_screen_activity_button_two_constraint_layout_margin_top"
+            android:layout_marginRight="36dp"
+            android:background="#12FFFFFF"
+            app:layout_constraintHorizontal_weight="0.66"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button_constraint_layout">
+
+            <EditText
+                android:id="@+id/password_edit_text"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/login_screen_activity_password_edit_text_height"
+                android:layout_marginStart="@dimen/login_screen_activity_password_edit_text_margin_start"
+                android:alpha="0.38"
+                android:background="@color/login_screen_activity_password_edit_text_background_color"
+                android:gravity="start|center_vertical"
+                android:hint="@string/login_screen_activity_password_edit_text_hint"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:textColor="@color/login_screen_activity_password_edit_text_text_color"
+                android:textColorHint="@color/color_hint_text"
+                android:textSize="@dimen/login_screen_activity_password_edit_text_text_size"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_weight="0.73"
+                app:layout_constraintLeft_toRightOf="@+id/icon_two_image_view"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="82dp"
+                tools:layout_editor_absoluteY="18dp" />
+
+            <ImageView
+                android:id="@+id/icon_two_image_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/login_screen_activity_icon_two_image_view_margin_start"
+                android:scaleType="center"
+                android:src="@drawable/icon_4"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="33dp"
+                tools:layout_editor_absoluteY="18dp" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ImageView
+            android:id="@+id/ic_launcher_image_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="126dp"
+            android:layout_marginTop="@dimen/login_screen_activity_ic_launcher_image_view_margin_top"
+            android:layout_marginRight="126dp"
+            android:scaleType="center"
+            android:src="@drawable/ic_launcher"
+            app:layout_constraintHorizontal_weight="0.28"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

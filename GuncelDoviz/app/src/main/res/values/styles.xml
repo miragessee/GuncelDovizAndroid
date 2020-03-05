@@ -1,0 +1,27 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <!--<style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        &lt;!&ndash; Customize your theme here. &ndash;&gt;
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>-->
+
+    <!-- Project level resources -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/color_primary</item>
+        <item name="colorPrimaryDark">@color/color_primary_dark</item>
+        <item name="colorAccent">@color/color_accent</item>
+    </style>
+
+    <!-- ListScreenActivity -->
+    <style name="ListScreenActivityTheme" parent="Theme.AppCompat.NoActionBar"/>
+
+    <!-- LoginScreenActivity -->
+    <style name="LoginScreenActivityTheme" parent="Theme.AppCompat.NoActionBar"/>
+
+    <!-- RegisterScreenActivity -->
+    <style name="RegisterScreenActivityTheme" parent="Theme.AppCompat.NoActionBar"/>
+
+</resources>
