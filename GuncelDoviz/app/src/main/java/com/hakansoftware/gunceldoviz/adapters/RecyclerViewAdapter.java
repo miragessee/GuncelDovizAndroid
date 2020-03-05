@@ -29,7 +29,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
 
     public RecyclerViewAdapter(Context context, List<Doviz> dovizList) {
         inflater = LayoutInflater.from(context);
-        this.dovizList = dovizList;
+        this.dovizList = new ArrayList<>(dovizList);
         this.dovizListFilter = dovizList;
     }
 
@@ -43,13 +43,13 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
 
     @Override
     public void onBindViewHolder(MyViewHolder holder, int position) {
-        Doviz selectedProduct = dovizList.get(position);
+        Doviz selectedProduct = dovizListFilter.get(position);
         holder.setData(selectedProduct, position);
     }
 
     @Override
     public int getItemCount() {
-        return dovizList.size();
+        return dovizListFilter.size();
     }
 
     @Override
